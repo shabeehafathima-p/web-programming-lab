@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>prgm8</title>
+<style>
+
+.imgee {
+  height: 300px;
+  width: 400px;
+  border-radius: 50%;
+  border: 5px solid blue;
+}
+body{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+</style>
+</head>
+<body>
+<h1>mouseover</h1>
+<h2>mouseout</h2>
+<img class="imgee" src="a.jpeg"id="image" onmouseover="one()" onmouseout="two()">
+<p id="p1">Awesome Day</p>
+<script>
+function one()
+{
+  document.getElementById("image").src="b.jpeg";
+  document.getElementById("p1").innerHTML="onmouseover";
+  document.getElementById("p1").style,color="blue";
+}
+function two()
+{
+document.getElementById("image").src="c.jpeg";
+document.getElementById("p1").innerHTML="onmouseout";
+document.getElementById("p1").style,color="red";
+}
+</script>
+</body>
+</html>
